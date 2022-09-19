@@ -1,24 +1,43 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Crud from './components/Crud';
+import FetchApi from './components/FetchApi';
+import Today from './components/Today';
+import Todo from './components/Todo';
+import UserData from './components/UserData';
+import Viewdata from './components/Viewdata';
+import Dark from './components/Dark';
+
+
+
+
+import { HashRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Crud /> */}
+
+      {/* <HashRouter>
+        <Routes>
+          <Route path='/' element={<FetchApi />} />
+          <Route path='/viewprofile/:id' element={<UserData />} />
+          <Route path='*' element={<h1>404</h1>} />
+        </Routes>
+      </HashRouter> */}
+
+     
+      {/* <Todo/> */}
+      {/* <Viewdata/> */}
+      <Today/>
+
+      {/* <Dark/> */}
+
+
+
+    </>
+
   );
 }
 
